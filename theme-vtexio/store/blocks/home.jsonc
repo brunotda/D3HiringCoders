@@ -1,0 +1,48 @@
+{
+  "store.home": { 
+    "blocks": [
+      "list-context.image-list#topbanner",
+      "product-list",
+      "rich-text"
+    ]
+  },
+  "list-context.image-list#topbanner": {
+    "children": ["slider-layout#topsite"],
+    "props": {
+      "preload": true,
+      "height": 650,
+      "images": [
+        {
+          "image": "assets/banners/BANNER-WOOD.png",
+          "description": "Wood Sport Festival - Troféu com personalização grátis"
+        },
+        {
+          "image": "assets/banners/BANNER-GUERREIROS.png",
+          "description": "Grandes Guerreiros"
+        }
+      ]
+    }
+  },
+  "slider-layout#topsite": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "fullWidth": false,
+      "infinite": true,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "always",
+      "blockClass": "carousel"
+    }
+  },
+  "rich-text": { 
+    "props": { 
+      "text": "VTEX Store Framework \n teste \n teste \n teste \n teste \n teste \n teste \n teste \n teste \n teste \n teste \n teste \n teste",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-1"
+    }
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "footer": {
+    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+  },
+  "footer-layout.desktop": { 
+    "children": [
+      "flex-layout.row#footer"
+    ]
+  },
+  "footer-layout.mobile": { 
+    "children": [
+      "flex-layout.row#footer"
+    ]
+  },  
+  "flex-layout.row#footer": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "vtex.menu@2.x:menu#footer"
+    ]
+  },
+  "vtex.menu@2.x:menu#footer": {
+    "props": {
+      "items": [
+        {
+          "id": "menu-entrar",
+          "type": "custom",
+          "highlight": false,
+          "iconProps": {
+            "id": "hpa-profile",
+            "size": 16,
+            "viewBox": "0 0 16 16",
+            "activeClassName": "vtex-menu-2-x-styledLink",
+            "mutedClassName": "c-action-primary"
+          },
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Entrar",
+            "text": "Entrar"
+          }
+        },
+        {
+          "id": "menu-desafio",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "iconProps": {
+            "id": "hpa-cart",
+            "size": 16,
+            "viewBox": "0 0 16 16",
+            "activeClassName": "vtex-menu-2-x-styledLink",
+            "mutedClassName": "c-action-primary"
+          },
+          "itemProps": {
+            "type": "internal",
+            "href": "/desafios",
+            "noFollow": false,
+            "tagTitle": "Desafios",
+            "text": "Desafios"
+          }
+        },
+        {
+          "id": "menu-loja",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "iconProps": {
+            "id": "hpa-cart",
+            "size": 16,
+            "viewBox": "0 0 16 16",
+            "activeClassName": "vtex-menu-2-x-styledLink",
+            "mutedClassName": "c-action-primary"
+          },
+          "itemProps": {
+            "type": "internal",
+            "href": "/loja",
+            "noFollow": false,
+            "tagTitle": "Loja",
+            "text": "Loja"
+          }
+        },
+        {
+          "id": "menu-suporte",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "iconProps": {
+            "id": "hpa-telemarketing",
+            "size": 16,
+            "viewBox": "0 0 16 16",
+            "activeClassName": "vtex-menu-2-x-styledLink",
+            "mutedClassName": "c-action-primary"
+          },
+          "itemProps": {
+            "type": "internal",
+            "href": "/suporte",
+            "noFollow": false,
+            "tagTitle": "Suporte",
+            "text": "Suporte"
+          }
+        }
+      ]
+    }
+  }
+}
