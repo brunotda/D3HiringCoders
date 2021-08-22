@@ -1,7 +1,171 @@
 {
   "store.product": {
+    "props": {
+      "blockClass": "pagProd"
+    },
     "children": [
-      
+      "flex-layout.row#image",
+      "flex-layout.row#nome",
+      "__fold__",
+      "flex-layout.row#informacoes",
+      "flex-layout.row#levejunto"
     ]
+  },
+  "flex-layout.row#image": {
+    "children": [
+      "product-images"
+    ]
+  },
+  "flex-layout.row#nome": {
+    "children": [
+      "vtex.store-components:product-name",
+      "product-price",
+      "add-to-cart-button"
+    ],
+    "props":{
+      "colSizing": "equal",
+      "fullWidth": false,
+      "horizontalAlign": "center",    
+      "marginBottom": 7,    
+      "marginTop": 7 
+    }
+  },
+  "vtex.store-components:product-name": {
+    "props": {
+      "showSku": false,
+      "showBrandName": false
+    }
+  },
+  "product-images": {
+    "props": {
+      "displayThumbnailsArrows": false
+    }
+  },
+  "flex-layout.row#informacoes": {
+    "children": [
+      "tab-layout#productinfos"
+    ],
+    "props":{
+      "blockClass": "productpage"
+    }
+  },
+  "tab-layout#productinfos": {
+    "children": [
+      "tab-list#productinfos",
+      "tab-content#productinfos"
+    ],
+    "props": {
+      "defaultActiveTabId": "tabDescricao"
+    }
+  },
+  "tab-list#productinfos": {
+    "children": [
+      "tab-list.item#descricao",
+      "tab-list.item#depoimentos",
+      "tab-list.item#duvidas"
+    ]
+  },
+  "tab-content#productinfos": {
+    "children": [
+      "tab-content.item#descricao",
+      "tab-content.item#depoimentos",
+      "tab-content.item#duvidas"
+    ]
+  },
+  "tab-list.item#descricao": {
+    "props": {
+      "tabId": "tabDescricao",
+      "label": "Descrição",
+      "defaultActiveTab": true
+    }
+  },
+  "tab-list.item#depoimentos": {
+    "props": {
+      "tabId": "tabDepoimentos",
+      "label": "Depoimentos",
+      "defaultActiveTab": false
+    }
+  },
+  "tab-list.item#duvidas": {
+    "props": {
+      "tabId": "tabDuvidas",
+      "label": "Dúvidas",
+      "defaultActiveTab": false
+    }
+  },
+  "tab-content.item#descricao": {
+    "children": [
+      "product-description"
+    ],
+    "props": {
+      "tabId": "tabDescricao"
+    }
+  },
+  "tab-content.item#depoimentos": {
+    "children": [
+      "product-reviews"
+    ],
+    "props": {
+      "tabId": "tabDepoimentos"
+    }
+  },
+  "tab-content.item#duvidas": {
+    "children": [
+      "rich-text#duvidas"
+    ],
+    "props": {
+      "tabId": "tabDuvidas"
+    }
+  },
+  "product-description": {
+    "props": {
+      "collapseContent": false,
+      "title": " "
+    }
+  },
+  "flex-layout.row#levejunto":{
+    "children": [
+      "flex-layout.col#levejunto"
+    ]
+  },
+  "flex-layout.col#levejunto":{
+    "children": [
+      "rich-text#levejunto",
+      "list-context.product-list#levejunto"    
+    ]
+  },
+
+  "rich-text#levejunto": {
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "## Leve Junto"
+    }
+  },
+  "list-context.product-list#levejunto": {
+    "blocks": ["product-summary.shelf"],
+    "props": {
+      "hideUnavailableItems": true
+    },
+    "children": [
+      "slider-layout#levejunto"
+    ]
+  },
+  "slider-layout#levejunto": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showPaginationDots": false
+    }
+  },
+  "rich-text#duvidas":{
+    "props": { 
+      "text": "**Entre em contato caso tenha alguma dúvida**",
+      "textPosition": "CENTER"
+    }
   }
 }

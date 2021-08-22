@@ -36,7 +36,7 @@
     "children": [
       "flex-layout.col#logo-desktop",
       "flex-layout.col#spacer",
-      "search-bar",
+      "flex-layout.col#search",
       "flex-layout.col#spacer",
       "login",
       "minicart.v2"
@@ -100,6 +100,16 @@
       "tabId": "corinthians"
     }
   },
+  "flex-layout.col#search": {
+    "children": [
+      "search-bar"
+    ],
+    "props": {
+      "blockClass": "search-Bar",
+      "width": "grow",
+      "verticalAlign": "middle"
+    }
+  },
   "flex-layout.col#spacer": {
     "props": {
       "width": "grow"
@@ -110,10 +120,10 @@
       "verticalAlign": "middle"
     },
     "children": [
-      "logo"
+      "logo#up"
     ]
   },
-  "logo": {
+  "logo#up": {
     "props": {
       "title": "Logo",
       "href": "/",
@@ -133,10 +143,8 @@
   },
   "flex-layout.row#mobile": {
     "children": [
-      "drawer",
-      "logo",
-      "flex-layout.col#spacer",
-      "login",
+      "flex-layout.col#logo-desktop",
+      "flex-layout.col#search",
       "minicart.v2"
     ],
     "props": {
@@ -145,8 +153,5 @@
       "preserveLayoutOnMobile": true,
       "fullWidth": true
     }
-  },
-  "drawer": {
-    "children": []
   }
 }

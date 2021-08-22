@@ -1,19 +1,22 @@
 {
   "store.orderplaced": {
-    "blocks": ["order-placed"]
+    "blocks": [
+      "order-placed"
+    ]
   },
-
   "store.account": {
-    "blocks": ["my-account"],
+    "blocks": [
+      "my-account"
+    ],
     "parent": {
       "challenge": "challenge.profile"
     }
   },
-
   "store.login": {
-    "blocks": ["login-content#default"]
+    "blocks": [
+      "login-content#default"
+    ]
   },
-
   "login-content#default": {
     "props": {
       "isInitialScreenOptionOnly": false,
@@ -21,16 +24,55 @@
       "showPasswordVerificationIntoTooltip": true
     }
   },
-
+  "add-to-cart-button#shelf":{
+    "props":{
+      "text": "Ver Detalhes"
+    }
+  },
+  "rich-text#loading": {
+    "props": {
+      "text": "Carregando..."
+    }
+  },
+  "product-price-suspense": {
+    "props": {
+      "Fallback": "rich-text#loading"
+    },
+    "children": [
+      "flex-layout.row#priceSelling"
+    ]
+  },
+  "flex-layout.row#priceSelling":{
+    "props":{
+      "horizontalAlign": "center",
+      "colSizing": "equal",
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children":[
+      "product-selling-price",
+      "add-to-cart-button#shelf"
+    ]
+  },
   "product-summary.shelf": {
     "children": [
-      "product-summary-add-to-list-button",
       "product-summary-name",
+      "product-summary-image",
+      "product-summary-add-to-list-button",
       "product-rating-inline",
       "product-summary-space",
-      "product-summary-price",
-      "product-identifier.summary",
-      "add-to-cart-button"
+      "product-price-suspense"
     ]
+  },
+  "product-summary-image": {
+    "props": {
+      "showBadge": false
+    }
+  },
+  "rich-text":{
+    "props": { 
+      "text": "**Apenas um texto, este recurso não esta configurado.**",
+      "textPosition": "CENTER"
+    }
   }
 }

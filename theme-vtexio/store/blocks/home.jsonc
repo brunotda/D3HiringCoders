@@ -2,7 +2,8 @@
   "store.home": { 
     "blocks": [
       "list-context.image-list#topbanner",
-      "rich-text"
+      "__fold__",
+      "search-result-layout.customQuery#homeproducts"
     ]
   },
   "list-context.image-list#topbanner": {
@@ -34,14 +35,6 @@
       "showNavigationArrows": "always",
       "showPaginationDots": "always",
       "blockClass": "carousel"
-    }
-  },
-  "rich-text": { 
-    "props": { 
-      "text": "VTEX Store Framework \n teste \n teste \n teste \n teste \n teste \n teste \n teste \n teste \n teste \n teste \n teste \n teste",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "font": "t-heading-1"
     }
   }
 }

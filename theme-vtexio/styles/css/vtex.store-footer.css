@@ -1,14 +1,21 @@
-.footerLayout{
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    left: 0;
+.footerLayout {
+    position        : fixed;
+    bottom          : 0;
+    right           : 0;
+    left            : 0;
     background-color: #424242;
+    z-index         : 999;
 }
-.footerLayout :global(.vtex-menu-2-x-styledLinkContent){
+
+.footerLayout :global(.vtex-menu-2-x-styledLinkContent) {
     flex-direction: column;
-    align-items: center;
+    align-items   : center;
 }
-.footerLayout :global(.vtex-menu-2-x-styledLink){
+
+.footerLayout :global(.vtex-menu-2-x-styledLink) {
     color: #fff;
+}
+
+.footerLayoutSpacer {
+    margin: 60px 0;
 }

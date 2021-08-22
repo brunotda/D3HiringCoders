@@ -1,3 +1,8 @@
 .container--sticky-header {
     background-color: #212121;
 }
+
+.wrapper--stuck:not(:hover) :global(.vtex-flex-layout-0-x-flexRowContent--main-header),
+.wrapper--stuck:not(:hover) :global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile) {
+    background-color: #212121;
+}

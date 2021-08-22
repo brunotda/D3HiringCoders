@@ -1,0 +1,19 @@
+{
+    "search-result-layout.customQuery#homeproducts": {
+        "props": {
+            "querySchema": {
+                "skusFilter": "FIRST_AVAILABLE",
+                "simulationBehavior": "skip",
+                "maxItemsPerPage": 10,
+                "queryField": "UpMedal",
+                "mapField": "b",
+                "orderByField": "OrderByScoreDESC"
+            }
+        },
+        "blocks": [
+            "search-result-layout.desktop",
+            "search-result-layout.mobile",
+            "search-not-found-layout"
+        ]
+    }
+}

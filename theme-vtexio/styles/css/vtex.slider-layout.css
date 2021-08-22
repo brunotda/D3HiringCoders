@@ -10,3 +10,12 @@
 .sliderLayoutContainer--carousel{
     background: none;
 }
+
+.sliderArrows {
+    color: #59ff00
+}
+
+.paginationDotsContainer{
+    margin-left: 40px;
+    margin-right: 40px;
+}

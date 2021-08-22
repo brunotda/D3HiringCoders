@@ -2,29 +2,29 @@
 ## Desafio 3 - VTEX IO + AWS
  Criar a solução a partir de um boiler template padrão da Vtex IO
 
-### To Do Tema
-- [ ] Header
-- [ ] Menu header
-- [ ] Menu footer
-- [ ] Banner
-- [ ] Listagem de produto
-- [ ] Mini cart
-- [ ] Página de produto
+### To Do - Tema
+- [x] Header
+- [x] Menu header
+- [x] Menu footer
+- [x] Banner
+- [x] Listagem de produto
+- [x] Mini cart
+- [x] Página de produto
 
-### To Do Componente React
+### To Do - Componente React
 - [ ] Botão WhatsApp
 - [ ] Cadastro de leads
 
-### To Do AWS
+### To Do - AWS
 - [ ] API Gateway PUT
 - [ ] API Gateway GET
 
-### To Do OPICIONAL
+### To Do - OPICIONAL
 - [ ] VTEX IO Componente administrativo
 
 
 ## Dados do projeto
-**Acesso:** https://d3brunotda--hiringcoders2021.myvtex.com/
+**Workspace:** https://d3brunotda--hiringcoders2021.myvtex.com/
 
 **Tema:** /theme-vtexio/
 
