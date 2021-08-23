@@ -12,12 +12,11 @@
 - [x] Página de produto
 
 ### To Do - Componente React
-- [ ] Botão WhatsApp
+- [x] Botão WhatsApp
 - [ ] Cadastro de leads
 
 ### To Do - AWS
 - [ ] API Gateway PUT
-- [ ] API Gateway GET
 
 ### To Do - OPICIONAL
 - [ ] VTEX IO Componente administrativo

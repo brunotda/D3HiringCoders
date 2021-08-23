@@ -21,7 +21,8 @@
       "fullWidth": true
     },
     "children": [
-      "vtex.menu@2.x:menu#footer"
+      "vtex.menu@2.x:menu#footer",
+      "whatsapplink"
     ]
   },
   "vtex.menu@2.x:menu#footer": {
@@ -84,26 +85,6 @@
             "noFollow": false,
             "tagTitle": "Loja",
             "text": "Loja"
-          }
-        },
-        {
-          "id": "menu-suporte",
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "iconProps": {
-            "id": "hpa-telemarketing",
-            "size": 16,
-            "viewBox": "0 0 16 16",
-            "activeClassName": "vtex-menu-2-x-styledLink",
-            "mutedClassName": "c-action-primary"
-          },
-          "itemProps": {
-            "type": "internal",
-            "href": "/suporte",
-            "noFollow": false,
-            "tagTitle": "Suporte",
-            "text": "Suporte"
           }
         }
       ]

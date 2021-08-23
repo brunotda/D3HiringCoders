@@ -1,5 +1,5 @@
 {
-  "store.home": { 
+  "store.home": {
     "blocks": [
       "list-context.image-list#topbanner",
       "__fold__",
@@ -7,7 +7,9 @@
     ]
   },
   "list-context.image-list#topbanner": {
-    "children": ["slider-layout#topsite"],
+    "children": [
+      "slider-layout#topsite"
+    ],
     "props": {
       "preload": true,
       "height": 650,

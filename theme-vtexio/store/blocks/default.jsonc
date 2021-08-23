@@ -74,5 +74,12 @@
       "text": "**Apenas um texto, este recurso não esta configurado.**",
       "textPosition": "CENTER"
     }
+  },
+  "whatsapplink": {
+    "props": {
+      "telefone": "5511000000000",
+      "mensagem": "Esta mensagem será enviada ao usuário",
+      "cta": "Suporte"
+    }
   }
 }
